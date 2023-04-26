@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About {% endblock title %}
+{% block banner-slider %}
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'ecomapp/images/banner/b.jpeg' %}" class="d-block  w-100" alt="banner image">
+    </div>
+     </div>
+ </div>
+{% endblock banner-slider %}
+{% block main-content %}
+<div class="container mt">
+    <br>
+    <h2 class="text-center">Contact Us</h2>
+    <div class="row container">
+        <div class="container-fluid bg- text-grey has-height-md middle-items border-top text-center wow fadeIn">
+        <div class="row">
+             <p class="fs-6 text-center">Address : Dairy World,Kollam, Kerala, PIN:565447 </p>
+            <div class="col-sm-3">
+                <h3>EMAIL US</h3>
+                <P class="text-muted"><b>info@website.com</b></P>
+            </div>
+            <div class="col-sm-3">
+                <h3>CALL US</h3>
+                <P class="text-muted"><b>(123) 456-7890</b></P>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock main-content %}

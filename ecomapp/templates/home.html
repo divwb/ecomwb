@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home {% endblock title %}
+{% block banner-slider %}
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'ecomapp/images/banner/b.jpeg' %}" class="d-block w-100" alt="banner image">
+    </div>
+     </div>
+ </div>
+{% endblock banner-slider %}
+{% block information %}
+<div class="container">
+    <br><br>
+    <h2 class="text-center">Home-Delivery:0242-647848</h2>
+    <div class="row bg-success text-center p-5 text-white border bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">
+            Dairy products or milk products, also known as lacticinia,
+            are food products made from (or containing) milk.
+            The most common dairy animals are cow, water buffalo, nanny goat, and ewe. Dairy products include common grocery store food items in the Western world such as cheese and butter.
+        </small>
+    </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+ <div class="container">
+     <br><br>
+     <div class="row container">
+
+           <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+         data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'ML' %}">
+                <div class="goodnessseccont text-center">
+                         <img src="{% static 'ecomapp/images/product/p6.png' %}" class="img-responsive center-block" alt="">
+                         <p class="mlkpro">Cow Milk</p>
+                </div>
+            </a>
+        </div>
+    </div>
+         <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+              data-wow-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay:0.6s;
+              animation-name:none;">
+             <div class="goodnesssec buttermilk smbg">
+                 <a href="{% url 'category' 'GH' %}">
+                     <div class="goodnessseccont text-center">
+                         <img src="{% static 'ecomapp/images/product/p5.png' %}" class="img-responsive" alt="">
+                         <p class="mlkpro">Ghee</p>
+                     </div>
+                 </a>
+             </div>
+         </div>
+
+          <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+               data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+             <div class="goodnesssec buttermilk smbg">
+                 <a href="{% url 'category' 'CR' %}">
+                     <div class="goodnessseccont text-center">
+                         <img src="{% static 'ecomapp/images/product/p3.png' %}" class="img-responsive center-block" alt="">
+                         <p class="mlkpro">Curd</p>
+                     </div>
+                 </a>
+             </div>
+         </div>
+
+
+         <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+              data-wow-duration="1s" data-wow-delay="0.6s"
+              style="animation-duration: 1s; animation-delay:0.6s;
+              animation-name:none;">
+             <div class="goodnesssec buttermilk smbg">
+                 <a href="{% url 'category' 'ML' %}">
+                     <div class="goodnessseccont text-center">
+                         <img src="{% static 'ecomapp/images/product/p1.png' %}" class="img-responsive" alt="">
+                         <p class="mlkpro">Tonedmilk</p>
+                     </div>
+                 </a>
+             </div>
+         </div>
+     <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+               data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+             <div class="goodnesssec buttermilk smbg">
+                 <a href="{% url 'category' 'Ic' %}">
+                     <div class="goodnessseccont text-center">
+                         <img src="{% static 'ecomapp/images/product/icecream.png' %}" class="img-responsive center-block" alt="">
+                         <p class="mlkpro">Ice-Creams</p>
+                     </div>
+                 </a>
+             </div>
+           </div>
+
+         <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+           data-wow-duration="1s" data-wow-delay="0.6s"
+           style="animation-duration: 1s; animation-delay:0.6s;
+           animation-name: none;">
+             <div class="goodnesssec buttermilk smbg">
+                 <a href="{% url 'category' 'PN' %}">
+                     <div class="goodnessseccont text-center">
+                         <img src="{% static 'ecomapp/images/product/p2.png' %}" class="img-responsive center-block" alt="">
+                         <p class="mlkpro">Paneer</p>
+                     </div>
+                 </a>
+             </div>
+       </div>
+     </div>
+     </div>
+<br/><br/>
+{% endblock main-content %}
